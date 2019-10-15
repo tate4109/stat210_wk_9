@@ -1,0 +1,35 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+#Breast Cancer package
+```{r}
+install.packages('BCRA') # install package from presentation
+require(BCRA)# load package
+data(exampledata) #load data
+head(exampledata) #see what package looks like
+absolute.risk(exampledata, Raw_Ind=1, Avg_White=0) #errors bc in wrong form --> numbers that show 
+relative.risk(exampledata, Raw_Ind=1) #shows risk for W age <50, W age >50, level #)
+```
+#Bio 3D package
+```{r}
+install.packages('bio3d')
+require(bio3d)
+pdb <- read.pdb('4q21') #error: skipping downlaod
+```
+#Picking colors in R
+```{r}
+install.packages('colorpicker')
+library('shiny')
+require(colourpicker)
+```
+
+------------------------------------------------------------------
+#In Class Activity - Data Wrangling - Formats and Imports
+
+```{r}
+nimbus <- read.csv('nimbus')
+```
+
+
